@@ -3,3 +3,15 @@ GET http://localhost:3000 HTTP/1.1
 ###
 
 GET http://localhost:3000/awesome HTTP/1.1
+
+###
+
+
+GET https://cse341-node-jfdg.onrender.com HTTP/1.1
+
+###
+
+GET https://cse341-test.onrender.com/contacts
+
+
+
