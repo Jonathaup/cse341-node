@@ -1,8 +1,9 @@
 const mongoose = require ('mongoose');
+require('dotenv').config();
 
 
-    const uri = "mongodb+srv://Jonathanup:Anggi17051997@cluster0.olphhmy.mongodb.net/?retryWrites=true&w=majority";
 
+    const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.olphhmy.mongodb.net/?retryWrites=true&w=majority`;
     const connectDB = async() => {
        await mongoose.connect(uri, {
         useUnifiedTopology: true,
@@ -11,6 +12,8 @@ const mongoose = require ('mongoose');
        console.log('db connected..!');
 
     };
+
+
 
     // const client = new MongoClient(uri);
 
